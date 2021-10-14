@@ -13,6 +13,18 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/about', (req,res) => {
+  res.render('about.hbs')
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs')
+})
+
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs')
+})
+
 // 路由監聽
 app.listen(port, () => {
   console.log(`express on http://localhost:${port}`)
